@@ -3,8 +3,6 @@ import { randomString } from "./lib/random";
 
 const app = express();
 
-function i() {}
-
 app.get("/", (req, res) => {
   res.send(`<h1>Hello, world! ${randomString(10)}</h1>`);
 });
